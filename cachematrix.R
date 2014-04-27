@@ -20,7 +20,7 @@ cacheSolve <- function(x, ...) {
         if(exists("matrix_and_inverse", globalenv()))
         {
                 if(identical(x, matrix_and_inverse$the_matrix)) 
-                return(matrix_and_inverse$the_inverse)
+                        return(matrix_and_inverse$the_inverse)
         }
   
         ## cache x and return its inverse
